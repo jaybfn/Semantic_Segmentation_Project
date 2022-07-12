@@ -21,6 +21,7 @@ sm.set_framework('tf.keras')
 
 sm.framework()
 
+# for every new experiment make a newfolder so that all the results from the model will be saved here.
 new_folder = '07July2022' 
 
 

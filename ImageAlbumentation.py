@@ -14,20 +14,22 @@ seed_for_random = 42
 
 
 
-#Define functions for each operation
-# Make sure the order of the spline interpolation is 0, default is 3. 
-#With interpolation, the pixel values get messed up.
+#Define functions for each type of augmentation.
+
 def rotation(image, seed):
     random.seed(seed)
     angle= random.randint(-180,180)
-    r_img = rotate(image, angle, mode='constant', cval = 0, reshape=False, order=0)
+    # here the cval = 0, because when an image is rotated, it leaves an empty space behind and that needs to be filled in with some pixel, so I fill it with pixel = 0 (black background)
+    r_img = rotate(image, angle, mode='constant', cval = 0, reshape=False, order=0)   
     return r_img
 
 def h_flip(image, seed):
+    random.seed(seed)
     hflipped_img= np.fliplr(image)
     return  hflipped_img
 
 def v_flip(image, seed):
+    random.seed(seed)
     vflipped_img= np.flipud(image)
     return vflipped_img
 
@@ -54,8 +56,8 @@ transformations = {'rotate': rotation,
 
 images_path="../../data/unet_img/Data_TF_397/val_image/JPEGImages/" #path to original images
 masks_path = "../../data/unet_img/Data_TF_397/val_mask/SegmentationClass/"
-img_augmented_path="../../data/unet_img/JPEGImages_aug/" # path to store aumented images
-msk_augmented_path="../../data/unet_img/SegmentationClass_aug/" # path to store aumented images
+img_augmented_path="../../data/unet_img/JPEGImages_aug/" # path to store augmented images
+msk_augmented_path="../../data/unet_img/SegmentationClass_aug/" # path to store augmented images
 images=[] # to store paths of images from folder
 masks=[]
 

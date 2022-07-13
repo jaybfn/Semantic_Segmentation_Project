@@ -25,7 +25,7 @@ sm.framework()
 new_folder = '07July2022' 
 
 
-# create directory to save the data
+# create directory to save the training data
 def create_dir(path):
         isExist = os.path.exists(path)
         if not isExist:
@@ -74,7 +74,7 @@ def TFDataLoader(train_img_path, train_mask_path, num_class):
     # images will be loaded directly from the local drive (less load on the memory)
     image_generator = image_datagen.flow_from_directory(
         train_img_path,
-        target_size=(256, 256),                                                     # for PSP net ,shape should be divisible by 48
+        target_size=(256, 256),                                                     
         class_mode = None,
         color_mode = "rgb",
         batch_size = batch_size,

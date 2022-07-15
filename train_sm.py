@@ -17,6 +17,7 @@ import segmentation_models as sm
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
 
+
 sm.set_framework('tf.keras')
 
 sm.framework()
@@ -195,6 +196,10 @@ if __name__ == "__main__":
                     classes = n_classes ,
                     activation = 'softmax')
     
+    def get_Model():
+            return UNET_RESNET152(n_classes,IMAGE_HEIGHT, IMAGE_WIDTH, IMAGE_CHANNELS)
+    model = get_Model()
+  
     # loading weights:
     #model.load_weights(path_model+'/'+model_name) 
 

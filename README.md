@@ -29,4 +29,4 @@ a. train_sm.py for training training the model wit your dataset:
                       . test_result: it stores the result from the testset from the dataset folder test_image.
            for the trained and val data, you  can store them manually when the script spits out the output..
 100. First list item
-     - First nested list item
+     - First nested list itemb

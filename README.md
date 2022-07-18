@@ -19,66 +19,15 @@ I have tested this project on my Windows 11 machine with 16GB RAM and NVDIA RTX 
 
 1. git clone using SSH (git@github.com:jaybfn/Semantic_Segmentation_Project.git)
 2. Before running any code, take a look at the requirements.txt file and make sure you have all the packages installed.
-3. folder ```dataset``` should be in a particular fashion as shown below:
-    dataset:
-            test_mask:
-                original:
-                    img1
-                    img2
-                    .
-                    .
-                masks:
-                    msk1
-                    msk2
-                    .
-                    .
-            test_images
-                original:
-                    img1
-                    img2
-                    .
-                    .
-                masks:
-            train_mask
-                original:
-                    img1
-                    img2
-                    .
-                    .
-                masks:
-                    msk1
-                    msk2
-                    .
-                    .
-            train_images:
-                original:
-                    img1
-                    img2
-                    .
-                    .
-                masks:
-                    msk1
-                    msk2
-                    .
-                    .
-            val_mask:
-                original:
-                    img1
-                    img2
-                    .
-                    .
-                masks:
-            val_images:
-                original:
-                    img1
-                    img2
-                    .
-                    .
-                masks:
-                    msk1
-                    msk2
-                    .
-                    .
-    
-3. the file ```trainUNET_Backbone.ipynb``` is a jupyter-notebook for testing your data at every line of the code, if no error is found then go to step 4.
-4. 
+3. folder ```dataset``` should be in a particular fashion as shown, its important to arrange your data in that order for semantic segmentation.
+4. the file ```trainUNET_Backbone.ipynb``` is a jupyter-notebook for testing your data at every line of the code, if no error is found then go to step 5.
+5. if you prefer to train your dataset with models from segmentation libraries then just get the dataset in to the right order and use the scripts:
+    a. train_sm.py for training training the model wit your dataset:
+        i. When you run the script train_sm.py, the script creates a folder with a predefined name call ´´´results´´´ and subfolders called:
+            . metricplot : it stores all the loss curves here
+            . model : it stores the model.h5 files here.
+            . predict_result : it store the results when you test on an unknow data
+            . test_result: it stores the result from the testset from the dataset folder test_image.
+           for the trained and val data, you  can store them manually when the script spits out the output.
+           
+          

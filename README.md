@@ -6,7 +6,7 @@ This project was build for segmenting different body parts of a mosquito for ide
 
 ```Due to privacy reason no link to the data is uploaded here!```
 
-Because each mosquitio has eight distinct body parts, the problem becomes multiclass segmentation problem.
+Since each mosquitio has eight distinct body parts, the problem becomes multiclass segmentation problem.
 In this project, I experimented with the [UNET](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) model with various Backbones as Encoders from various RESNET architectures, namely RESNSET 34, 50, 101, and 152. Finally, after all of the training, RESNET 152 outperforms every other encoder.
 
 # Technology Stack

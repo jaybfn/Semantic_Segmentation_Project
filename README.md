@@ -19,5 +19,5 @@ I have tested this project on my Windows 11 machine with 16GB RAM and NVDIA RTX 
 
 1. git clone using SSH (git@github.com:jaybfn/Semantic_Segmentation_Project.git)
 2. Before running any code, take a look at the requirements.txt file and make sure you have all the packages installed.
-3. the file ```trainUNET_Backbone.ipynb``` is a jupyternotebook for testing your data at every line of the code, if no error is found then go to step 4.
+3. the file ```trainUNET_Backbone.ipynb``` is a jupyter-notebook for testing your data at every line of the code, if no error is found then go to step 4.
 4. 

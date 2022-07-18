@@ -1,4 +1,4 @@
-List of packages required to run the files:
+list of packages required to run the files:
 python                    3.10.2
 numpy                     1.22.3
 pandas                    1.4.1 

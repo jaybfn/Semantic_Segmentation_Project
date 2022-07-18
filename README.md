@@ -17,5 +17,7 @@ In this project, I experimented with the [UNET](https://lmb.informatik.uni-freib
 
 I have tested this project on my Windows 11 machine with 16GB RAM and NVDIA RTX 3070 GPU.Juast follow the instruction given below step by step for your custom data:
 
-1. git clone: git@github.com:jaybfn/Semantic_Segmentation_Project.git
-2. 
+1. git clone using SSH (git@github.com:jaybfn/Semantic_Segmentation_Project.git)
+2. Before running any code, take a look at the requirements.txt file and make sure you have all the packages installed.
+3. the file ```trainUNET_Backbone.ipynb``` is a jupyternotebook for testing your data at every line of the code, if no error is found then go to step 4.
+4. 

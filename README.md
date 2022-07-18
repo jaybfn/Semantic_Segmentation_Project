@@ -1,5 +1,7 @@
 # Semantic_Segmentation_Project
 
+![image](https://github.com/jaybfn/Semantic_Segmentation_Project/blob/main/semanticsegmentation.png)
+
 ## Project Description
 
 This project was build for segmenting different body parts of a mosquito for identifying various species and combat vector-borne diseases.

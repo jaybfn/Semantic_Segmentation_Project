@@ -28,6 +28,6 @@ I have tested this project on my Windows 11 machine with 16GB RAM and NVDIA RTX 
             . model : it stores the model.h5 files here.
             . predict_result : it store the results when you test on an unknow data
             . test_result: it stores the result from the testset from the dataset folder test_image.
-           for the trained and val data, you  can store them manually when the script spits out the output.
+           for the trained and val data, you  can store them manually when the script spits out the output..
            
           

@@ -74,7 +74,7 @@ if __name__=='__main__':
     HEIGHT = 256
     n_classes = 9 
 
-    # Image paths!
+    # Image paths!, Where a single image to predict is stored!
     image_dir = '../../data/unet_img/Data_TF_Scalerapid_Split/test_image/Original/'
 
     predict(image_dir)

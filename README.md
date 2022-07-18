@@ -22,7 +22,7 @@ I have tested this project on my Windows 11 machine with 16GB RAM and NVDIA RTX 
 3. folder ```dataset``` should be in a particular fashion as shown, its important to arrange your data in that order for semantic segmentation.
 4. The file ```trainUNET_Backbone.ipynb``` is a jupyter-notebook for testing your data at every line of the code, if no error is found then go to step 5.
 5. If you prefer to train your dataset with models from segmentation libraries then just get the dataset in to the right order and use the scripts:
-           100 a. train_sm.py for training training the model wit your dataset:
+- a. train_sm.py for training training the model wit your dataset:
            i. When you run the script train_sm.py, the script creates a folder with a predefined name call ´´´results´´´ and subfolders called:
                       . model : it stores the model.h5 files here.
                       . predict_result : it store the results when you test on an unknow data

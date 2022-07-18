@@ -23,10 +23,10 @@ I have tested this project on my Windows 11 machine with 16GB RAM and NVDIA RTX 
 4. The file ```trainUNET_Backbone.ipynb``` is a jupyter-notebook for testing your data at every line of the code, if no error is found then go to step 5.
 5. If you prefer to train your dataset with models from segmentation libraries then just get the dataset in to the right order and use the scripts:
 - train_sm.py for training training the model wit your dataset:
-  - When you run the script train_sm.py, the script creates a folder with a predefined name call ´´´results´´´ and subfolders called:
-   - model : it stores the model.h5 files here.
-   - predict_result : it store the results when you test on an unknow data
-   - test_result: it stores the result from the testset from the dataset folder test_image.
-for the trained and val data, you  can store them manually when the script spits out the output..
-100. First list item
-     - First nested list itemb
+  - When you run the script train_sm.py, the script creates a folder with a predefined name call ```results``` and subfolders called:
+    - model : it stores the model.h5 files here.
+    - metricplots: here, the script dumps the loss function data.
+    - predict_result : it store the results when you test on an unknow dataset.
+    - test_result: it stores the result from the testset from the dataset folder test_image.
+  - for the trained and val data, you  can store the results manually when the script spits out the output.
+
